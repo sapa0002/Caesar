@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.superman.alex.caesarcipherv2.EncryptedTextActivity"
+    tools:showIn="@layout/activity_encrypted_text">
+
+    <TextView
+        android:id="@+id/txtPrompt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_txt2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:id="@+id/verticalScroll2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/txtPrompt2">
+
+        <EditText
+            android:id="@+id/editMsg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/clearBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_btn"
+        android:layout_below="@+id/verticalScroll2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
